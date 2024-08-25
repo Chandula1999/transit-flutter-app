@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -10,6 +12,11 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   String description_1 =
     "Delivering goods, saving the planet.\nExperience a smarter way to deliver. \nOur app connects you with fast, reliable transport options for all your needs.";
+    void startTimer() {
+    Timer(const Duration(seconds: 3), () async {
+
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
